@@ -11,7 +11,10 @@ public class Calculator {
         return a * b;
     }
 
-    public static double division(int a, int b){
+    public static double division(int a, int b) throws Exception {
+        if (b == 0){
+            throw new Exception("Cannot divide by 0");
+        }
         return (double) a/b;
     }
 }
